@@ -1,5 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
   bindChoiceButtons();
+
+  // Preload the images after the DOM is ready
+  const preloadImage1 = new Image();
+  preloadImage1.src = '../images/puffins.jpg';  
+  const preloadImage2 = new Image();
+  preloadImage2.src = '../images/kerry-cliffs.jpg';  
 });
 
 function bindChoiceButtons() {
