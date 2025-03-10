@@ -1,0 +1,12 @@
+{
+  "configurations": [
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Launch Brave against localhost",
+      "url": "http://localhost:8080",
+      "webRoot": "${workspaceFolder}",
+      "runtimeExecutable": "C:/Program Files/BraveSoftware/Brave-Browser/Application/brave.exe"
+    }
+  ]
+}

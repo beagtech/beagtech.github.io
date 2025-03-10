@@ -1,0 +1,301 @@
+:root {
+  /* see colorhexa.com/4cbb17 with other base colors based on triadic and shades via monochromatic */
+  --green-kelly: #4cbb17;
+  --green-dark: #30770f;
+  --green-light: #70e738; 
+  --red-base: #bb174c;
+  --blue-base: #174cbb;
+  --blue-dark: #0f3077;
+  --blue-light: #3870e7;
+  --blue-pale: #d7e2fa;
+  --yellow-pale: #fffacd;
+  --orange-accent: #e67e22;
+  /* Bootstrap variable overrides */
+  --bs-primary: var(--green-kelly) !important;
+  --bs-secondary: var(--blue-base) !important;
+  --bs-success: var(--green-light) !important;
+  --bs-danger: var(--red-base) !important;
+  --bs-warning: var(--orange-accent) !important;
+  --bs-info: var(--blue-light) !important;
+  --bs-dark: var(--green-dark) !important;
+  --bs-light: #f8f9fa !important;
+  /* Override button and component styling */
+  --bs-btn-bg: var(--bs-primary) !important;
+  --bs-btn-border-color: var(--bs-primary) !important;
+  --bs-btn-hover-bg: var(--green-dark) !important;
+  --bs-btn-hover-border-color: var(--green-dark) !important;
+  /* Ensure other components like alerts, badges, etc., also update */
+  --bs-alert-bg: var(--bs-primary) !important;
+  --bs-badge-bg: var(--bs-primary) !important;
+  /* accordion color overrides */
+  --bs-accordion-active-bg: var(--blue-pale) !important;
+  --bs-accordion-btn-bg: var(--blue-pale) !important;
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--blue-base) !important;
+  --bs-btn-border-color: var(--blue-base) !important;
+  --bs-btn-hover-bg: var(--blue-dark) !important;
+  --bs-btn-hover-border-color: var(--blue-dark) !important;
+  --bs-btn-color: #fff !important; /* For text color */
+  --bs-btn-active-color: #fff !important;
+  --bs-btn-hover-color: #fff !important;
+  --bs-btn-active-bg: var(--blue-dark) !important;
+  --bs-btn-active-border-color: var(--blue-dark) !important;
+  --bs-btn-disabled-bg: var(--blue-base) !important;
+  --bs-btn-disabled-border-color: var(--blue-base) !important;
+}
+
+.btn-primary-outline {
+  --bs-btn-bg: transparent !important;
+  --bs-btn-border-color: var(--blue-base) !important;
+  --bs-btn-color: var(--blue-base) !important;
+  --bs-btn-hover-bg: var(--blue-base) !important;
+  --bs-btn-hover-border-color: var(--blue-base) !important;
+  --bs-btn-active-color: #fff !important;
+  --bs-btn-hover-color: #fff !important;
+  --bs-btn-active-bg: var(--blue-dark) !important;
+  --bs-btn-active-border-color: var(--blue-dark) !important;
+  --bs-btn-disabled-bg: transparent !important;
+  --bs-btn-disabled-border-color: var(--blue-base) !important;
+  --bs-btn-disabled-color: var(--blue-base) !important;
+}
+
+.btn-success {
+  --bs-btn-bg: var(--green-kelly) !important;
+  --bs-btn-border-color: var(--green-kelly) !important;
+  --bs-btn-hover-bg: var(--green-dark) !important;
+  --bs-btn-hover-border-color: var(--green-dark) !important;
+  --bs-btn-color: #fff !important; /* For text color */
+  --bs-btn-active-color: #fff !important;
+  --bs-btn-hover-color: #fff !important;
+  --bs-btn-active-bg: var(--green-dark) !important;
+  --bs-btn-active-border-color: var(--green-dark) !important;
+  --bs-btn-disabled-bg: var(--green-kelly) !important;
+  --bs-btn-disabled-border-color: var(--green-kelly) !important;
+}
+
+.btn-success-outline {
+  --bs-btn-bg: transparent !important;
+  --bs-btn-border-color: var(--green-kelly) !important;
+  --bs-btn-color: var(--green-kelly) !important;
+  --bs-btn-hover-bg: var(--green-kelly) !important;
+  --bs-btn-hover-border-color: var(--green-kelly) !important;
+  --bs-btn-active-color: #fff !important;
+  --bs-btn-hover-color: #fff !important;
+  --bs-btn-active-bg: var(--green-dark) !important;
+  --bs-btn-active-border-color: var(--green-dark) !important;
+  --bs-btn-disabled-bg: transparent !important;
+  --bs-btn-disabled-border-color: var(--green-kelly) !important;
+  --bs-btn-disabled-color: var(--green-kelly) !important;
+}
+
+.color-green-kelly {
+  color: var(--green-kelly);
+}
+.color-green-dark {
+  color: var(--green-dark);
+}
+.color-green-light {
+  color: var(--green-light);
+}
+.color-red-base {
+  color: var(--red-base);
+}
+.color-blue-base {
+  color: var(--blue-base);
+}
+.color-blue-dark {
+  color: var(--blue-dark);
+}
+.color-blue-light {
+  color: var(--blue-light);
+}
+.color-yellow-pale {
+  color: var(--yellow-pale);
+}
+.color-orange-accent {
+  color: var(--orange-accent);
+}
+
+body {
+  font-family: lato, sans-serif;
+}
+
+.app-container {
+  padding-bottom: 2rem;
+}
+
+.font-comfortaa {
+  font-family: comfortaa, sans-serif;
+}
+
+.header-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem;
+}
+
+.logo-named {
+  display: flex;
+  align-items: stretch;
+  color: var(--green-kelly);
+}
+
+.header-area img.logo-svg {
+  height: clamp(3rem, 8vw, 12rem);
+}
+
+.logo-name-text {
+  letter-spacing: -0.15em;
+  display: flex;
+  align-items: center;
+  height: clamp(3rem, 8vw, 12rem);
+}
+
+.logo-name {
+  font-size: clamp(2.5rem, 6.5vw, 10rem); 
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.tagline {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  margin-top: 1rem;
+  color: var(--blue-dark);
+}
+
+.header-area .buttons {
+  margin-top: 2rem;
+}
+
+.header-area .buttons button {
+  font-size: clamp(.8rem, 2vw, 1rem);
+  margin: 0.5rem;
+}
+
+.content-area {
+  width: clamp(90%, 50vw, 50%);
+  max-width: 800px; /* Prevents it from getting too wide on very large screens */
+  margin: 0 auto;
+  text-align: left;
+  padding: 0rem 1rem 1rem 1rem; /* Adds some breathing room */
+}
+
+.content-item {
+  display: none;
+}
+
+.content-item.active {
+  display: block;
+} 
+
+.accordion-collapse {
+  display: none;
+}
+.accordion-collapse.active {
+  display: block;
+}
+
+.accordion-item:first-of-type .accordion-button {
+  border-top-left-radius: var(--bs-accordion-border-radius);
+  border-top-right-radius: var(--bs-accordion-border-radius);
+}
+.accordion-item:last-of-type .accordion-button {
+  border-bottom-left-radius: var(--bs-accordion-border-radius);
+  border-bottom-right-radius: var(--bs-accordion-border-radius);
+}
+
+.accordion .accordion-item .accordion-button.collapsed {
+  color: var(--blue-base) !important;
+}
+
+.accordion .accordion-item .accordion-button:not(.collapsed) {
+  background-color: var(--blue-pale) !important;
+  color: var(--blue-dark) !important;
+}
+
+.about-us-accordion .accordion-button {
+  position: relative;
+}
+
+.accordion-button .split-image {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  background-size: auto;
+  background-repeat: no-repeat;
+  -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 1) 70%);
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 1) 70%);
+}
+
+.about-us-accordion .accordion-button .split-image {
+  background-position: 45% 50%;
+  background-image: url('../images/puffins.jpg'); 
+}
+.were-hiring-accordion .accordion-button .split-image {
+  background-position: 25% 50%;
+  background-image: url('../images/kerry-cliffs.jpg'); 
+}
+
+@media (min-width: 1024px) {
+  .accordion-button .split-image {
+    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 1) 70%);
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 1) 70%);
+  }
+
+  .were-hiring-accordion .accordion-button .split-image {
+    background-position: 0% 50%;
+  }
+}
+
+.accordion-button:focus {
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(var(--blue-dark-rgb), 0.25);
+}
+
+.accordion-button::after {
+  order: -1;
+  margin-left: 0 !important;
+  margin-right: 0.5em;
+}
+
+.accordion-item .parenthetical,
+.accordion-item h3 {
+  padding: 1em 1em 0em 1em;
+}
+
+.accordion ul {
+  padding-top: 1em;
+}
+
+.accordion li {
+  list-style: none;
+  background-image: url('../images/bullet.svg');
+  background-repeat: no-repeat;
+  background-position: left .25em;
+  padding-left: 1.5em;
+  padding-right: 2em;
+  padding-bottom: .75em;
+  background-size: 1em;
+  color: var(--blue-dark);
+}
+
+.app-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 0.5em;
+  font-size: 0.9em;
+  color: rgba(0, 0, 0, 0.6);
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(5px);
+}
