@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', function () {
   // Preload the images after the DOM is ready
   const preloadImage1 = new Image();
   preloadImage1.src = '../images/puffins.jpg';  
-  const preloadImage2 = new Image();
-  preloadImage2.src = '../images/kerry-cliffs.jpg';  
+
+  initImageAccordionButtons('about_us');
 });
 
 function bindChoiceButtons() {
